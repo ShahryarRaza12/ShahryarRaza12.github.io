@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<BODY background=https://www.petmd.com/sites/default/files/petmd-cat-happy-13.jpg></BODY>
+	<body background="https://scontent.fhou1-1.fna.fbcdn.net/v/t1.0-9/23621588_340610029736757_7377289952955781060_n.jpg?oh=836262ad9896f10b1d10556294f61deb&oe=5B11A28A"></body>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	
 </head>
 
 <body>
-	<!-- This is the navigation bar for my Website-->
+	
+  <!-- This is the navigation bar for my Website-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Hello! I am Shahryar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,17 +46,134 @@
   </div>
 </nav>
 	<!-- This is the end of the code{for the navigation bar}-->
-	<!-- This is the beginning of the jumbotron-->
+  <!-- This is the beginning of the jumbotron-->
 	<div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-4">Hello! My name is Shahryar!</h1>
     <p class="lead">I am currently training to become a professional Software, Web, and App developer!</p>
   </div>
 </div>
+	<!-- This is the beginning of the background -->
+  <div id= "particles-js"></div>
+ <script type="text/javascript" src= "particles.js"></script>
+  <script type="text/javascript" src= "app.js"></script>
+  <!-- This is the end of the background-->
 	
-	<!-- This is the end of the code-->
+  <!-- This is the end of the code-->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <!-- This is the transition-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome</title>
+        <style type="text/css">
+            
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: 'Open Sans', Arial, sans-serif;
+                font-weight: 700;
+            }
+            .welcome-section {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: #000;
+                overflow: hidden;
+            }
+            .welcome-section .content-wrap {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate3d(-50%, -50%, 0);
+            }
+            .welcome-section .content-wrap .fly-in-text {
+                list-style: none;
+            }
+            .welcome-section .content-wrap .fly-in-text li {
+                display: inline-block;
+                margin-right: 30px;
+                font-size: 5em;
+                color: #fff;
+                opacity: 1;
+                transition: all 2s ease;
+            }
+            .welcome-section .content-wrap .fly-in-text li:last-child {
+                margin-right: 0;
+            }
+            .welcome-section .content-wrap .enter-button {
+                display: block;
+                text-align: center;
+                font-size: 1em;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #adff2f;
+                opacity: 1;
+                transition: all 1s ease 2s;
+            }
+            
+            .welcome-section.content-hidden .content-wrap .fly-in-text li { opacity: 0; }
+            .welcome-section.content-hidden .content-wrap .fly-in-text li:nth-child(1) { transform: translate3d(-100px, 0, 0); }
+            .welcome-section.content-hidden .content-wrap .fly-in-text li:nth-child(2) { transform: translate3d(100px, 0, 0); }
+            .welcome-section.content-hidden .content-wrap .enter-button { opacity: 0; transform: translate3d(0, -30px, 0); }
+            
+            @media (min-width: 800px) {
+                .welcome-section .content-wrap .fly-in-text li { font-size: 10em; }
+                .welcome-section .content-wrap .enter-button { font-size: 1.5em; }
+            }
+            
+            
+            
+        </style>
+    </head>
+    <body>
+        
+        
+        <div class="welcome-section content-hidden">
+            <div class="content-wrap">
+                <ul class="fly-in-text">
+                    <li>H</li>
+                    <li>i</li>
+                </ul>
+                
+                <a href="#" class="enter-button">Enter</a>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            $(function() {
+                
+                var welcomeSection = $('.welcome-section'),
+                    enterButton = welcomeSection.find('.enter-button');
+                
+                setTimeout(function() {
+                    welcomeSection.removeClass('content-hidden');
+                }, 500);
+                
+                enterButton.on('click', function(e) {
+                    e.preventDefault();
+                    welcomeSection.addClass('content-hidden').fadeOut();
+                });
+                
+                
+            })();
+            
+            
+            
+        </script>
+        <!--This is the end of the transition-->
 </body>
 </html>
